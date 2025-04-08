@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="controllers/App.js" defer></script>
+    <link rel="stylesheet" href="views/Styles/maps.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+<body>
+    
+</body>
+</html>
+
+
+<section id="juego" class="pantalla">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <div class="row">
+                <div class="col-md-4 col-12 mb-2 mb-md-0">
+                  <h2 class="mb-0">Batalla Naval</h2>
+                </div>
+                <div class="col-md-8 col-12">
+                  <div class="game-info d-flex flex-wrap justify-content-md-end justify-content-center gap-3">
+                    <div id="clima" class="clima-info d-flex align-items-center">
+                      <span class="clima-titulo me-1">Clima:</span>
+                      <span class="clima-valor me-1">Cargando...</span>
+                      <img id="clima-icon" src="" alt="Clima" class="img-fluid" style="max-height: 24px;">
+                    </div>
+                    <div class="turno-info d-flex align-items-center">
+                      <span class="turno-titulo me-1">Turno:</span>
+                      <span id="turno-valor" class="turno-valor badge bg-success">Tu turno</span>
+                    </div>
+                    <div class="puntaje-info d-flex align-items-center">
+                      <span class="puntaje-titulo me-1">Puntaje:</span>
+                      <span id="puntaje-valor" class="puntaje-valor badge bg-info">0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <div class="game-boards row">
+                <div class="player-board col-lg-6 col-12 mb-4">
+                  <h3 class="text-center mb-3">Tu tablero</h3>
+                  <div id="tableroJugador" class="tablero mx-auto"></div>
+                </div>
+                
+                <div class="enemy-board col-lg-6 col-12 mb-4">
+                  <h3 class="text-center mb-3">Tablero enemigo</h3>
+                  <div id="tableroEnemigo" class="tablero mx-auto"></div>
+                </div>
+              </div>
+              
+              <div class="game-controls row mt-4">
+                <div class="col-12 d-flex justify-content-center gap-2">
+                  <button id="exportarMapas" class="btn btn-secondary">
+                    <i class="bi bi-download"></i> Exportar mapas
+                  </button>
+                  <button id="finalizarJuego" class="btn btn-danger">
+                    <i class="bi bi-x-circle"></i> Finalizar juego
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
