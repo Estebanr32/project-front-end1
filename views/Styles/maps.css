@@ -1,46 +1,52 @@
 .tablero {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-gap: 2px;
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  
-  .celda {
-    aspect-ratio: 1;
-    background-color: #e7f5ff;
-    border: 1px solid #a5d8ff;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-  
-  .celda:hover {
-    background-color: #a5d8ff;
-  }
-  
-  .celda.header {
-    background-color: #4dabf7;
-    color: white;
-    cursor: default;
-  }
-  
-  .celda.header:hover {
-    background-color: #4dabf7;
-  }
-  
-  .celda.selected {
-    background-color: #4dabf7;
-    color: white;
-  }
-  
-  .celda.hovering {
-    background-color: #74c0fc;
-  }
-  
-  .celda.invalid {
-    background-color: #ffa8a8;
-  }
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 2px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+body {
+  background: url("./images/battleship-pictures-gtxokkmhxeiycq20.jpg")
+    center/cover no-repeat fixed;
+  margin: 0;
+  height: 100vh;
+}
+
+.celda {
+  aspect-ratio: 1;
+  background-color: #e7f5ff;
+  border: 1px solid #a5d8ff;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.celda:hover {
+  background-color: #a5d8ff;
+}
+
+.celda.header {
+  background-color: #4dabf7;
+  color: white;
+  cursor: default;
+}
+
+.celda.header:hover {
+  background-color: #4dabf7;
+}
+
+.celda.selected {
+  background-color: #4dabf7;
+  color: white;
+}
+
+.celda.hovering {
+  background-color: #74c0fc;
+}
+
+.celda.invalid {
+  background-color: #ffa8a8;
+}
