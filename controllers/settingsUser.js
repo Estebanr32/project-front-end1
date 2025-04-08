@@ -1,7 +1,7 @@
 import { createMap, } from "./createMap.js";
 import { fetchPage } from "../Helpers/Utils.js";
 import { play } from "./Play.js";
-import { ContainerShips } from "../Model/ContainerShips.js";
+import { ContainerShips } from "../Model/containerShips.js";
 import { matrixMap } from "../Helpers/Utils.js";
 
 
