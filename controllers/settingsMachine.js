@@ -17,7 +17,7 @@ export function createShipsMachines() {
             const x = position[0];
             const y = position[1];
             matrixMachine[x][y]=`p2-${x}-${y}`
-           
+          
             isShipPut=true
           })
         }
