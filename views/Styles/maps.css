@@ -5,12 +5,6 @@
   max-width: 450px;
   margin: 0 auto;
 }
-body {
-  background: url("./images/battleship-pictures-gtxokkmhxeiycq20.jpg")
-    center/cover no-repeat fixed;
-  margin: 0;
-  height: 100vh;
-}
 
 .celda {
   aspect-ratio: 1;
