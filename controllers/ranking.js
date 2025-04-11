@@ -2,7 +2,7 @@ import { fetchJson,fetchPage } from "../Helpers/Utils.js";
 import { settingsUSer } from "./settingsUser.js"
 
 
-export async function raking() {
+export async function Ranking() {
     const response = await (await fetchJson("http://127.0.0.1:5000/ranking")).json();
     const body = document.getElementById("bodyRanking");
     const data = await (await fetchJson("http://127.0.0.1:5000/countries")).json();

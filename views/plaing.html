@@ -27,15 +27,15 @@
                 </div>
                 <div class="col-md-8 col-12">
                   <div class="game-info d-flex flex-wrap justify-content-md-end justify-content-center gap-3">
-                    <div id="clima" class="clima-info d-flex align-items-center">
+                    <div class="clima-info d-flex align-items-center">
+                      <span class="clima-titulo me-1">Nombre:</span>
+                      <span  id="user" class="clima-valor me-1">Cargando...</span>
+                    </div>
+                    <div class="clima-info d-flex align-items-center">
                       <span class="clima-titulo me-1">Clima:</span>
-                      <span class="clima-valor me-1">Cargando...</span>
-                      <img id="clima-icon" src="" alt="Clima" class="img-fluid" style="max-height: 24px;">
+                      <span id="clima"class="clima-valor me-1">Cargando...</span>
                     </div>
-                    <div class="turno-info d-flex align-items-center">
-                      <span class="turno-titulo me-1">Turno:</span>
-                      <span id="turno-valor" class="turno-valor badge bg-success">Tu turno</span>
-                    </div>
+                   
                     <div class="puntaje-info d-flex align-items-center">
                       <span class="puntaje-titulo me-1">Puntaje:</span>
                       <span id="puntaje-valor" class="puntaje-valor badge bg-info">0</span>
@@ -58,16 +58,7 @@
                 </div>
               </div>
               
-              <div class="game-controls row mt-4">
-                <div class="col-12 d-flex justify-content-center gap-2">
-                  <button id="exportarMapas" class="btn btn-secondary">
-                    <i class="bi bi-download"></i> Exportar mapas
-                  </button>
-                  <button id="finalizarJuego" class="btn btn-danger">
-                    <i class="bi bi-x-circle"></i> Finalizar juego
-                  </button>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>

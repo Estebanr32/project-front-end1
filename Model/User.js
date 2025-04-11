@@ -1,7 +1,7 @@
 export class User {
-    constructor(nick_name, score, country_code) {
+    constructor(nick_name, country_code) {
         this.nick_name = nick_name;
-        this.score = score;
+        this.score = 0;
         this.country_code = country_code;
     }
 

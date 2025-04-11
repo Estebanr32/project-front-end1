@@ -1,6 +1,6 @@
 export class Ship{
-    constructor(size,positions){
-        this.size=size
+    
+    constructor(positions=[]){
         this.positions=positions
     }
     getPositions(){

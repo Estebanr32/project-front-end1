@@ -1,5 +1,6 @@
 import { matrixMap } from "../Helpers/Utils.js";
 import {ContainerShips} from "../Model/containerShips.js"
+import { createMap } from "./createMap.js";
 import{numberRamdonBetween} from "../Helpers/Utils.js";
 import { Ship } from "../Model/Ship.js";
 
@@ -17,14 +18,13 @@ export function createShipsMachines() {
             const x = position[0];
             const y = position[1];
             matrixMachine[x][y]=`p2-${x}-${y}`
-          
+           
             isShipPut=true
           })
         }
       } while (!isShipPut);
       
     })
-    console.log(matrixMachine);
     return matrixMachine
   } 
   
@@ -69,3 +69,5 @@ export function createShipsMachines() {
     return positions;
   
   }
+ 
+  
